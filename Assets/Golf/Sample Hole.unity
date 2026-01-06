@@ -410,14 +410,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320165466}
   m_Enabled: 1
-  serializedVersion: 11
+  serializedVersion: 12
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
+  m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
@@ -577,6 +577,7 @@ MonoBehaviour:
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -805,6 +806,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -826,9 +829,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &613411513
 MeshFilter:
@@ -847,8 +852,8 @@ Transform:
   m_GameObject: {fileID: 613411510}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.5558696, y: 0.6888132, z: 1.0542097}
-  m_LocalScale: {x: -1.355446, y: 1.7743201, z: 0.30667728}
+  m_LocalPosition: {x: -3.86, y: 0.6888132, z: 1.0542097}
+  m_LocalScale: {x: -2.9169197, y: 1.7743201, z: 0.30667728}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 123040201}
@@ -913,6 +918,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -934,9 +941,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &767960797
 MeshFilter:
@@ -956,7 +965,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.415869, y: 0.7388132, z: 2.4742098}
-  m_LocalScale: {x: 14.760595, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 30, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 123040201}
@@ -1020,6 +1029,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1041,9 +1052,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &953486776
 MeshFilter:
@@ -1458,6 +1471,7 @@ MonoBehaviour:
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -1527,14 +1541,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570344307}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.62232196, y: -0, z: -0, w: 0.7827614}
+  m_LocalPosition: {x: 0.118, y: 0.481, z: 0.074}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1767397054}
   m_Father: {fileID: 1658107588}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 76.972, y: 0, z: 0}
 --- !u!114 &1570344309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1687,7 +1701,7 @@ MonoBehaviour:
   m_LineOriginOffset: 0
 --- !u!120 &1570344310
 LineRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1706,6 +1720,8 @@ LineRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1727,9 +1743,11 @@ LineRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
+  m_MaskInteraction: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 1}
@@ -1788,7 +1806,6 @@ LineRenderer:
     textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
-  m_MaskInteraction: 0
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 0
@@ -1813,6 +1830,8 @@ MonoBehaviour:
   m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
   m_StartingTargetFilter: {fileID: 0}
+  m_AutoFindParentInteractableInHierarchy: 0
+  m_ParentInteractableObject: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -2400,6 +2419,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2421,9 +2442,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1608838302
 MeshFilter:
@@ -2443,7 +2466,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.415869, y: 0.77881324, z: -0.3957901}
-  m_LocalScale: {x: 14.760595, y: 0.18502001, z: 0.2}
+  m_LocalScale: {x: 30, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 123040201}
