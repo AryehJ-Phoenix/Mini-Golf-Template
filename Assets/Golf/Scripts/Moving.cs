@@ -19,8 +19,7 @@ public class Moving : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        timer = time;
-        timer = timer/2;
+        timer = time/2;
     }
 
     // Update is called once per frame
@@ -44,7 +43,7 @@ public class Moving : MonoBehaviour
         if (position_based && positions.Count > 0)
         {
             // GET THIS WORKING PLEEEAAASSSEEEEEEEEEEEEEEEE
-            transform.position = Vector3.MoveTowards(transform.position, next, speed)
+            // transform.position = Vector3.MoveTowards(transform.position, next, speed);
         }
     }
 }
