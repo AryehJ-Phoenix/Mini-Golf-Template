@@ -44,7 +44,7 @@ public class Moving : MonoBehaviour
         if (position_based && positions.Count > 0)
         {
             // GET THIS WORKING PLEEEAAASSSEEEEEEEEEEEEEEEE
-            transform.position = Vector3.MoveTowards(Position,next,speed)
+            transform.position = Vector3.MoveTowards(transform.position, next, speed)
         }
     }
 }
