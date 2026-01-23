@@ -44,7 +44,7 @@ public class Moving : MonoBehaviour
         if (position_based && positions.Count > 0)
         {
             float distance = Vector3.Distance(transform.position, positions[target]);
-            if(distance <= 0.1)
+            if(Mathf.Abs(distance) <= 0.1)
             {
                 target += 1;
                 target = target % positions.Count();
