@@ -856,8 +856,8 @@ Transform:
   m_GameObject: {fileID: 613411510}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4483, y: 6.15, z: 1.0542097}
-  m_LocalScale: {x: -2.1407275, y: 1.7743201, z: 0.30667728}
+  m_LocalPosition: {x: 6.4167, y: 6.15, z: 1.0542097}
+  m_LocalScale: {x: -1.5471038, y: 1.7743201, z: 0.30667728}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 123040201}
@@ -1225,13 +1225,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127474935}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.006177157, z: -0, w: 0.999981}
-  m_LocalPosition: {x: 2.1900005, y: 6.211187, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2, y: 6.25, z: 1}
   m_LocalScale: {x: 3.2900999, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 123040201}
-  m_LocalEulerAnglesHint: {x: 0, y: -0.708, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1127474937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1247,9 +1247,11 @@ MonoBehaviour:
   xSpeed: 0
   ySpeed: 0
   zSpeed: 0.004
-  position_based: 0
-  positions: []
-  speed: 0
+  position_based: 1
+  positions:
+  - {x: 2, y: 6.25, z: 2.3}
+  - {x: 2, y: 6.25, z: -0.3}
+  speed: 0.01
   time: 0.8
 --- !u!65 &1127474938
 BoxCollider:
@@ -1904,7 +1906,7 @@ GameObject:
   - component: {fileID: 1539129640}
   - component: {fileID: 1539129644}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Teleportation Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1953,7 +1955,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

@@ -12,7 +12,8 @@ public class Moving : MonoBehaviour
     public bool position_based;
     public List<Vector3> positions;
     private Vector3 next;
-    public float speed;
+    private int target = 0;
+    public float speed = 0.01;
     private float timer;
     public float time;
 
@@ -42,8 +43,18 @@ public class Moving : MonoBehaviour
 
         if (position_based && positions.Count > 0)
         {
+            if(Mathf.Abs(transform.position - positions[target]) <= Vector3[0.1,0.1,0.1])
+            {
+                target += 1;
+                if(target >= positions.Count)
+                {
+                    target = 0;
+                }
+            }
+            
+            next = positions[target];
             // GET THIS WORKING PLEEEAAASSSEEEEEEEEEEEEEEEE
-            // transform.position = Vector3.MoveTowards(transform.position, next, speed);
+            transform.position = Vector3.MoveTowards(transform.position, next, speed);
         }
     }
 }
