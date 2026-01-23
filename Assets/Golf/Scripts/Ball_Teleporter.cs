@@ -22,6 +22,7 @@ public class Ball_Teleporter : MonoBehaviour
         if (other.gameObject.CompareTag("Ball"))
         {
             other.gameObject.transform.position = target;
+            other.gameObject.GetComponent<Rigidbody>().linearVelocity = new Vector3(0,0,0);
         }
     }
 }

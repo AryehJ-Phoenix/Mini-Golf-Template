@@ -13,7 +13,7 @@ public class Moving : MonoBehaviour
     public List<Vector3> positions;
     private Vector3 next;
     private int target = 0;
-    public float speed = 0.01;
+    public float speed = 0.0025f;
     private float timer;
     public float time;
 
@@ -43,13 +43,11 @@ public class Moving : MonoBehaviour
 
         if (position_based && positions.Count > 0)
         {
-            if(Mathf.Abs(transform.position - positions[target]) <= Vector3[0.1,0.1,0.1])
+            float distance = Vector3.Distance(transform.position, positions[target]);
+            if(distance <= 0.1)
             {
                 target += 1;
-                if(target >= positions.Count)
-                {
-                    target = 0;
-                }
+                target = target % positions.Count();
             }
             
             next = positions[target];
