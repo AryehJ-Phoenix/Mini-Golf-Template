@@ -1249,9 +1249,9 @@ MonoBehaviour:
   zSpeed: 0.004
   position_based: 1
   positions:
-  - {x: 2, y: 6.25, z: 14.3}
-  - {x: 2, y: 6.25, z: 13.7}
-  speed: 0.0025
+  - {x: -2, y: 5.8, z: 14.7}
+  - {x: -2, y: 5.8, z: 11.8}
+  speed: 0.005
   time: 0.8
 --- !u!65 &1127474938
 BoxCollider:
