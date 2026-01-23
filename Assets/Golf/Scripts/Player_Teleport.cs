@@ -15,7 +15,7 @@ public class Player_Teleport : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
         {
-            Debug.Log("SAPCE BUTTON PRESSED");
+            print("SPACE KEY PRESSED");
         }
     }
 }
